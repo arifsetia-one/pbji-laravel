@@ -10,12 +10,12 @@
 
 <body>
     <!-- navbar -->
-    <section id="navbar" class="hidden md:flex justify-between items-center p-4 bg-white shadow-md">
+    <section id="navbar" class="hidden md:flex justify-between items-center p-3 bg-white shadow-md">
         <div class="flex items-center gap-1">
-            <img class="w-12" src="../assets/logo-pbji.png" alt="" />
-            <div class="text-3xl font-extrabold">PBJI-DIY</div>
+            <img class="w-11" src="../assets/logo/logo-pbji.png" alt="" />
+            <div class="text-3xl font-extrabold font-sans">PBJI-DIY</div>
         </div>
-        <div class="flex justify-between gap-6 lg:gap-10">
+        <div class="flex justify-between font-medium gap-6 lg:gap-10">
             <a class="text-sm lg:text-base" href="#">Beranda</a>
             <a class="text-sm lg:text-base" href="#">Profil</a>
             <a class="text-sm lg:text-base" href="#">Informasi PBJI</a>
@@ -24,10 +24,9 @@
             <a class="text-sm lg:text-base" href="#">Bantuan</a>
         </div>
         <div class="flex items-center gap-8">
-            <a href="#"><img src="../assets/notif.png" alt=""></a>
             <div class="hidden lg:flex items-center gap-3">
-                <img class="w-7 h-7 rounded-full bg-cover" src="../assets/logo-pbji.png" alt="" />
-                <div class="text-sm md:text-base text-based-2">Marco</div>
+                <img class="w-7 h-7 rounded-full bg-cover" src="../assets/icon/avatar.png" alt="" />
+                <div class="font-medium text-sm md:text-base text-based-2">Marco</div>
             </div>
         </div>
     </section>
@@ -36,7 +35,7 @@
         <nav class="bg-white border-gray-200">
             <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
                 <a href="#" class="flex items-center">
-                    <img src="../assets/logo-pbji.png" class="h-8 mr-3" alt="Flowbite Logo" />
+                    <img src="../assets/logo/logo-pbji.png" class="h-8 mr-3" alt="Logo PBJI" />
                     <span class="self-center text-2xl font-extrabold whitespace-nowrap">PBJI DIY</span>
                 </a>
                 <button data-collapse-toggle="navbar-default" type="button"
@@ -87,9 +86,8 @@
                             <a href="#"
                                 class="block py-2 pl-3 pr-4 text-sm text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-based md:p-0">
                                 <div class="flex items-center justify-center gap-3">
-                                    <img class="w-7 h-7 rounded-full bg-cover" src="../assets/logo-pbji.png"
+                                    <img class="w-7 h-7 rounded-full bg-cover" src="../assets/logo/logo-pbji.png"
                                         alt="" />
-                                    <div class="text-sm md:text-base text-based-2">Marco</div>
                                 </div>
                             </a>
                         </li>
@@ -100,9 +98,9 @@
     </section>
     {{-- End of Navbar --}}
 
-    <div class="md:flex md:flex-col">
+    <section class="md:flex md:flex-col">
         <div class="md:flex md:flex-1">
-            <div class="md:flex md:flex-col bg-[#F1F1F1] md:w-96 md:h-screen p-4 gap-4 sticky top-0">
+            <div class="md:flex md:flex-col bg-[#F1F1F1] md:w-96 md:h-screen p-4 gap-4">
                 {{-- avatar --}}
                 <div class="flex flex-col items-center pb-6">
                     <img class="w-24 h-24 mb-3 rounded-full shadow-lg"
@@ -130,7 +128,7 @@
                 {{-- end of text detail --}}
             </div>
             {{-- end of avatar --}}
-            <div class="bg-white md:w-full ml-6 mr-6 mt-4">
+            <div class="bg-white md:w-full ml-6 mr-6 mt-6">
                 {{-- card --}}
                 <div class="bg-red-600 rounded-md">
                     <div class=" text-white pt-6 pl-5 pr-5 pb-5">
@@ -164,7 +162,7 @@
                 {{-- end of input presensi --}}
             </div>
         </div>
-    </div>
+    </section>
 
     <!-- footer -->
     <section class="px-14 py-20 bg-[#464646] text-white border-t-[15px] border-black" id="footer">
@@ -200,7 +198,8 @@
                 </div>
             </div>
         </div>
-        <div class="mt-9 w-full flex flex-col gap-4 md:gap-0 md:flex-row justify-between">
+        <hr class="w-full mt-10">
+        <div class="mt-6 font-medium text-xl w-full flex flex-col gap-4 md:gap-0 md:flex-row justify-between">
             <div class="w-full md:w-1/3">
                 <div class="text-sm">Copyright © 2023</div>
                 <div class="text-sm">PBJI DAERAH ISTIMEWA YOGYAKARTA</div>
@@ -210,19 +209,19 @@
                 <h5 class="text-xl font-semibold">Ikuti Kami</h5>
                 <div class="mt-6 flex gap-6">
                     <a href="https://www.facebook.com/">
-                        <img class="w-8 md:w-auto" src="../assets/icon-facebook.png" alt="" />
+                        <img class="w-8 md:w-auto" src="../assets/icon/icon-facebook.png" alt="" />
                     </a>
                     <a href="https://www.instagram.com/">
-                        <img class="w-8 md:w-auto" src="../assets/icon-instagram.png" alt="" />
+                        <img class="w-8 md:w-auto" src="../assets/icon/icon-instagram.png" alt="" />
                     </a>
                     <a href="https://www.youtube.com/">
-                        <img class="w-8 md:w-auto" src="../assets/icon-youtube.png" alt="" />
+                        <img class="w-8 md:w-auto" src="../assets/icon/icon-youtube.png" alt="" />
                     </a>
                 </div>
             </div>
         </div>
     </section>
-
+    {{-- end of footer --}}
     <script src="../path/to/flowbite/dist/flowbite.min.js"></script>
 </body>
 
