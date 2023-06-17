@@ -10,12 +10,13 @@
 </head>
 
 <body>
-    <section id="navbar" class="hidden md:flex justify-between items-center p-4 bg-white shadow-md">
+    {{-- navbar --}}
+    <section id="navbar" class="hidden md:flex justify-between items-center p-3 bg-white shadow-md">
         <div class="flex items-center gap-1">
-            <img class="w-12" src="../assets/logo-pbji.png" alt="" />
-            <div class="text-3xl font-extrabold">PBJI-DIY</div>
+            <img class="w-11" src="../assets/logo/logo-pbji.png" alt="" />
+            <div class="text-3xl font-extrabold font-sans">PBJI-DIY</div>
         </div>
-        <div class="flex justify-between gap-6 lg:gap-10">
+        <div class="flex justify-between font-medium gap-6 lg:gap-10">
             <a class="text-sm lg:text-base" href="#">Beranda</a>
             <a class="text-sm lg:text-base" href="#">Profil</a>
             <a class="text-sm lg:text-base" href="#">Informasi PBJI</a>
@@ -23,16 +24,19 @@
             <a class="text-sm lg:text-base" href="#">Acara</a>
             <a class="text-sm lg:text-base" href="#">Bantuan</a>
         </div>
-        <button class="text-sm lg:text-base rounded-lg bg-based font-semibold text-white py-2 px-5">
-            Masuk
-        </button>
+        <div class="flex items-center gap-8">
+            <div class="hidden lg:flex items-center gap-3">
+                <img class="w-7 h-7 rounded-full bg-cover" src="../assets/icon/avatar.png" alt="" />
+                <div class="font-medium text-sm md:text-base text-based-2">Marco</div>
+            </div>
+        </div>
     </section>
-    <!-- mobile navbar -->
-    <section id="mobileNavbar" class="block md:hidden">
-        <nav class="bg-white border-gray-200 shadow-md">
+    {{-- mobile navbar --}}
+    <section id="mobileNavbar" class="block md:hidden shadow-md">
+        <nav class="bg-white border-gray-200">
             <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
                 <a href="#" class="flex items-center">
-                    <img src="../assets/logo-pbji.png" class="h-8 mr-3" alt="Flowbite Logo" />
+                    <img src="../assets/logo/logo-pbji.png" class="h-8 mr-3" alt="Logo PBJI" />
                     <span class="self-center text-2xl font-extrabold whitespace-nowrap">PBJI DIY</span>
                 </a>
                 <button data-collapse-toggle="navbar-default" type="button"
@@ -76,24 +80,32 @@
                                 class="block py-2 pl-3 pr-4 text-sm text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-based md:p-0">Bantuan</a>
                         </li>
                         <li>
-                            <button
-                                class="text-sm lg:text-base w-full rounded-lg bg-based font-semibold text-white py-2 px-5">
-                                Masuk
-                            </button>
+                            <a href="#"
+                                class="block py-2 pl-3 pr-4 text-sm text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-based md:p-0">Pemberitahuan</a>
+                        </li>
+                        <li>
+                            <a href="#"
+                                class="block py-2 pl-3 pr-4 text-sm text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-based md:p-0">
+                                <div class="flex items-center justify-center gap-3">
+                                    <img class="w-7 h-7 rounded-full bg-cover" src="../assets/logo/logo-pbji.png"
+                                        alt="" />
+                                </div>
+                            </a>
                         </li>
                     </ul>
                 </div>
             </div>
         </nav>
     </section>
+    {{-- end of navbar --}}
 
-    <!-- hero -->
+    {{-- hero --}}
     <section id="hero">
         <div class="relative">
-            <img class="absolute z-[-1] bg-cover" src="../assets/hero.png" alt="" />
+            <img class="absolute z-[-1] bg-cover" src="../assets/foto/hero.png" alt="" />
         </div>
         <div class="flex gap-3 md:gap-6 items-center pt-7 md:pt-20 px-4 md:px-14">
-            <img class="w-10 h-10 md:w-28 md:h-28 lg:w-32 lg:h-32" src="../assets/logo-pbji.png" alt="" />
+            <img class="w-10 h-10 md:w-28 md:h-28 lg:w-32 lg:h-32" src="../assets/logo/logo-pbji.png" alt="" />
             <div class="text-sm md:text-2xl lg:text-4xl text-white font-bold">
                 <div>PBJI</div>
                 <div>Pengurus besar ju-jitsu Indonesia</div>
@@ -103,20 +115,21 @@
             <div class="text-base md:text-3xl lg:text-5xl font-semibold w-2/3">
                 LOREM IPSUM LOREM IPSUM LOREM IPSUM
             </div>
-            <img class="w-[50px] md:w-[200px] xl:w-[300px]" src="../assets/card-hero.png" alt="" />
+            <img class="w-[50px] md:w-[200px] xl:w-[300px]" src="../assets/foto/card-hero.png" alt="" />
         </div>
     </section>
+    {{-- end of hero --}}
 
-    <!-- card carousel -->
+    {{-- card carousel --}}
     <section class="px-0 md:px-10 lg:px-14 mt-[0px] hpB:mt-[60px] hpC:mt-[20%] md:mt-0 lg:mt-[150px] xl:mt-[250px]"
         id="cardCarousel">
         <div id="controls-carousel" class="relative w-full" data-carousel="static">
-            <!-- Carousel wrapper -->
+            {{-- carousel wrapper --}}
             <div class="relative h-56 overflow-hidden rounded-lg md:h-96">
                 <!-- Item 1 -->
                 <a href="#">
                     <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                        <img src="../assets/card-1.png"
+                        <img src="../assets/foto/card-1.png"
                             class="absolute block w-[70%] lg:w-[85%] -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
                             alt="..." />
                     </div>
@@ -124,13 +137,15 @@
                 <!-- Item 2 -->
                 <a href="#">
                     <div class="hidden duration-700 ease-in-out" data-carousel-item="active">
-                        <img src="../assets/card-2.png"
+                        <img src="../assets/foto/card-2.png"
                             class="absolute block w-[70%] lg:w-[85%] -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
                             alt="..." />
                     </div>
                 </a>
             </div>
-            <!-- Slider controls -->
+            {{-- end of carousel wrapper --}}
+
+            {{-- slider controls --}}
             <button type="button"
                 class="absolute top-0 left-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
                 data-carousel-prev>
@@ -157,10 +172,12 @@
                     <span class="sr-only">Next</span>
                 </span>
             </button>
+            {{-- end of slider controls --}}
         </div>
     </section>
+    {{-- end of card carousel --}}
 
-    <!-- card event -->
+    {{-- card event --}}
     <section class="px-14" id="cardEvent">
         <h3 class="text-base md:text-3xl text-based-2 font-semibold mb-10">
             Rekomendasi Event
@@ -169,7 +186,7 @@
             <!-- card 1 -->
             <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow">
                 <a href="#">
-                    <img class="rounded-t-lg w-full object-cover" src="../assets/event-1.png" alt="" />
+                    <img class="rounded-t-lg w-full object-cover" src="../assets/foto/event-1.png" alt="" />
                 </a>
                 <div class="p-5">
                     <a href="#">
@@ -189,7 +206,7 @@
             <!-- card 2 -->
             <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow">
                 <a href="#">
-                    <img class="rounded-t-lg w-full object-cover" src="../assets/event-2.png" alt="" />
+                    <img class="rounded-t-lg w-full object-cover" src="../assets/foto/event-2.png" alt="" />
                 </a>
                 <div class="p-5">
                     <a href="#">
@@ -209,7 +226,7 @@
             <!-- card 3 -->
             <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow">
                 <a href="#">
-                    <img class="rounded-t-lg w-full object-cover" src="../assets/event-1.png" alt="" />
+                    <img class="rounded-t-lg w-full object-cover" src="../assets/foto/event-1.png" alt="" />
                 </a>
                 <div class="p-5">
                     <a href="#">
@@ -228,8 +245,9 @@
             </div>
         </div>
     </section>
+    {{-- end of card event --}}
 
-    <!-- media partner logos -->
+    {{-- media partner logos --}}
     <section class="px-14 my-[100px]" id="mediaPartner">
         <div class="grid grid-cols-3 md:grid-cols-5">
             <img class="w-auto" src="../assets/iji.png" alt="" />
@@ -239,8 +257,9 @@
             <img class="w-auto" src="../assets/yusshika.png" alt="" />
         </div>
     </section>
+    {{-- end of media partner logos --}}
 
-    <!-- footer -->
+    {{-- footer --}}
     <section class="px-14 py-20 bg-[#464646] text-white border-t-[15px] border-black" id="footer">
         <div class="flex flex-col md:flex-row">
             <div class="w-full md:w-1/3">
@@ -274,7 +293,8 @@
                 </div>
             </div>
         </div>
-        <div class="mt-9 w-full flex flex-col gap-4 md:gap-0 md:flex-row justify-between">
+        <hr class="w-full mt-10">
+        <div class="mt-6 font-medium text-xl w-full flex flex-col gap-4 md:gap-0 md:flex-row justify-between">
             <div class="w-full md:w-1/3">
                 <div class="text-sm">Copyright © 2023</div>
                 <div class="text-sm">PBJI DAERAH ISTIMEWA YOGYAKARTA</div>
@@ -284,18 +304,19 @@
                 <h5 class="text-xl font-semibold">Ikuti Kami</h5>
                 <div class="mt-6 flex gap-6">
                     <a href="https://www.facebook.com/">
-                        <img class="w-8 md:w-auto" src="../assets/icon-facebook.png" alt="" />
+                        <img class="w-8 md:w-auto" src="../assets/icon/icon-facebook.png" alt="" />
                     </a>
                     <a href="https://www.instagram.com/">
-                        <img class="w-8 md:w-auto" src="../assets/icon-instagram.png" alt="" />
+                        <img class="w-8 md:w-auto" src="../assets/icon/icon-instagram.png" alt="" />
                     </a>
                     <a href="https://www.youtube.com/">
-                        <img class="w-8 md:w-auto" src="../assets/icon-youtube.png" alt="" />
+                        <img class="w-8 md:w-auto" src="../assets/icon/icon-youtube.png" alt="" />
                     </a>
                 </div>
             </div>
         </div>
     </section>
+    {{-- end of footer --}}
     <script src="../path/to/flowbite/dist/flowbite.min.js"></script>
 </body>
 

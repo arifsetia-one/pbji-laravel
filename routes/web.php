@@ -25,4 +25,10 @@ Route::get('/presence', function () {
     return view('presence');
 });
 
-Route::get('/arif', [arif::class, 'login']);
+Route::get('/admin', function () {
+    return view('admin');
+});
+
+Route::get('/login', function () {
+    return view('login');
+});

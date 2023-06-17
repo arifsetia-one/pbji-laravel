@@ -9,7 +9,7 @@
 </head>
 
 <body>
-    <!-- navbar -->
+    {{-- navbar --}}
     <section id="navbar" class="hidden md:flex justify-between items-center p-3 bg-white shadow-md">
         <div class="flex items-center gap-1">
             <img class="w-11" src="../assets/logo/logo-pbji.png" alt="" />
@@ -30,7 +30,7 @@
             </div>
         </div>
     </section>
-    <!-- mobile navbar -->
+    {{-- mobile navbar --}}
     <section id="mobileNavbar" class="block md:hidden shadow-md">
         <nav class="bg-white border-gray-200">
             <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
@@ -98,6 +98,7 @@
     </section>
     {{-- End of Navbar --}}
 
+    {{-- card presence --}}
     <section class="md:flex md:flex-col">
         <div class="md:flex md:flex-1">
             <div class="md:flex md:flex-col bg-[#F1F1F1] md:w-96 md:h-screen p-4 gap-4">
@@ -163,6 +164,7 @@
             </div>
         </div>
     </section>
+    {{-- end of card presence --}}
 
     <!-- footer -->
     <section class="px-14 py-20 bg-[#464646] text-white border-t-[15px] border-black" id="footer">
