@@ -1,108 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.5/flowbite.min.css" rel="stylesheet" />
-    <link href="/dist/output.css" rel="stylesheet" />
-    <link rel="shortcut icon" href="../assets/logo-pbji.png" type="image/x-icon" />
-    @vite(['resources/css/app.css', 'resources/js/app.js'])
-    <title>Pengurus Besar Ju-Jitsu Indonesia</title>
-</head>
-
-<body>
-    <!-- navbar -->
-    <section id="navbar" class="hidden md:flex justify-between items-center p-4 bg-white">
-        <div class="flex items-center gap-1">
-            <img class="w-12" src="../assets/logo-pbji.png" alt="" />
-            <div class="text-3xl font-extrabold">PBJI-DIY</div>
-        </div>
-        <div class="flex justify-between gap-6 lg:gap-10">
-            <a class="text-sm lg:text-base" href="#">Beranda</a>
-            <a class="text-sm lg:text-base" href="#">Profil</a>
-            <a class="text-sm lg:text-base" href="#">Informasi PBJI</a>
-            <a class="text-sm lg:text-base" href="#">Berita</a>
-            <a class="text-sm lg:text-base" href="#">Acara</a>
-            <a class="text-sm lg:text-base" href="#">Bantuan</a>
-        </div>
-        <div class="flex items-center gap-8">
-            <a href="#"><img src="../assets/notif.png" alt=""></a>
-            <div class="hidden lg:flex items-center gap-3">
-                <img class="w-7 h-7 rounded-full bg-cover" src="../assets/logo-pbji.png" alt="" />
-                <div class="text-sm md:text-base text-based-2">Marco</div>
-            </div>
-        </div>
-    </section>
-    <!-- mobile navbar -->
-    <section id="mobileNavbar" class="block md:hidden">
-        <nav class="bg-white border-gray-200">
-            <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-                <a href="#" class="flex items-center">
-                    <img src="../assets/logo-pbji.png" class="h-8 mr-3" alt="Flowbite Logo" />
-                    <span class="self-center text-2xl font-extrabold whitespace-nowrap">PBJI DIY</span>
-                </a>
-                <button data-collapse-toggle="navbar-default" type="button"
-                    class="inline-flex items-center p-2 ml-3 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200"
-                    aria-controls="navbar-default" aria-expanded="false">
-                    <span class="sr-only">Open main menu</span>
-                    <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20"
-                        xmlns="http://www.w3.org/2000/svg">
-                        <path fill-rule="evenodd"
-                            d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
-                            clip-rule="evenodd"></path>
-                    </svg>
-                </button>
-                <div class="hidden w-full md:block md:w-auto" id="navbar-default">
-                    <ul
-                        class="text-center font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-white">
-                        <li>
-                            <a href="#"
-                                class="block py-2 pl-3 pr-4 text-sm text-gray-900 rounded md:bg-transparent md:text-based md:p-0"
-                                aria-current="page">Beranda</a>
-                        </li>
-                        <li>
-                            <a href="#"
-                                class="block py-2 pl-3 pr-4 text-sm text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-based md:p-0">Profil</a>
-                        </li>
-                        <li>
-                            <a href="#"
-                                class="block py-2 pl-3 pr-4 text-sm text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-based md:p-0">Informasi
-                                PBJI</a>
-                        </li>
-                        <li>
-                            <a href="#"
-                                class="block py-2 pl-3 pr-4 text-sm text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-based md:p-0">Berita</a>
-                        </li>
-                        <li>
-                            <a href="#"
-                                class="block py-2 pl-3 pr-4 text-sm text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-based md:p-0">Acara</a>
-                        </li>
-                        <li>
-                            <a href="#"
-                                class="block py-2 pl-3 pr-4 text-sm text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-based md:p-0">Bantuan</a>
-                        </li>
-                        <li>
-                            <a href="#"
-                                class="block py-2 pl-3 pr-4 text-sm text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-based md:p-0">Pemberitahuan</a>
-                        </li>
-                        <li>
-                            <a href="#"
-                                class="block py-2 pl-3 pr-4 text-sm text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-based md:p-0">
-                                <div class="flex items-center justify-center gap-3">
-                                    <img class="w-7 h-7 rounded-full bg-cover" src="../assets/logo-pbji.png"
-                                        alt="" />
-                                    <div class="text-sm md:text-base text-based-2">Marco</div>
-                                </div>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-    </section>
-
+@extends('layout.main')
+@section('content')
     <!-- presensi -->
     <section id="presensi" class="px-3 md:px-10 lg:px-14 py-4 bg-white">
         <div class="flex flex-col md:flex-row gap-3 justify-between">
@@ -246,71 +143,12 @@
     <!-- media partner logos -->
     <section class="px-14 my-[100px]" id="mediaPartner">
         <div class="grid grid-cols-3 md:grid-cols-5">
-            <img class="w-auto" src="../assets/iji.png" alt="" />
-            <img class="w-auto" src="../assets/jjau.png" alt="" />
-            <img class="w-auto" src="../assets/ijf.png" alt="" />
-            <img class="w-auto" src="../assets/pbji.png" alt="" />
-            <img class="w-auto" src="../assets/yusshika.png" alt="" />
+            <img class="w-auto" src="{{ asset('assets') }}/logo/iji.png" alt="" />
+            <img class="w-auto" src="{{ asset('assets') }}/logo/jjau.png" alt="" />
+            <img class="w-auto" src="{{ asset('assets') }}/logo/ijf.png" alt="" />
+            <img class="w-auto" src="{{ asset('assets') }}/logo/pbji.png" alt="" />
+            <img class="w-auto" src="{{ asset('assets') }}/ logo / yusshika . png }}" alt="" />
         </div>
     </section>
-
-    <!-- footer -->
-    <section class="px-14 py-20 bg-[#464646] text-white border-t-[15px] border-black" id="footer">
-        <div class="flex flex-col md:flex-row">
-            <div class="w-full md:w-1/3">
-                <h5 class="text-base lg:text-xl font-semibold">PBJI DAERAH ISTIMEWA YOGYAKARTA</h5>
-            </div>
-            <div class="w-full md:w-2/3 flex flex-col md:flex-row gap-6 md:gap-0 justify-between">
-                <div class="flex flex-col gap-3 md:gap-6">
-                    <h5 class="text-xl font-semibold">Informasi Dojo</h5>
-                    <p class="text-sm">Dojo RSPAU</p>
-                    <p class="text-sm">Dojo Polres Kota</p>
-                    <p class="text-sm">Dojo Polresta</p>
-                    <p class="text-sm">Dojo Yusshika</p>
-                    <p class="text-sm">Dojo SBI</p>
-                    <p class="text-sm">Dojo Ngademke Ati</p>
-                </div>
-
-                <div class="flex flex-col gap-3 md:gap-6">
-                    <h5 class="text-xl font-semibold">Menu</h5>
-                    <p class="text-sm">Home</p>
-                    <p class="text-sm">Profile</p>
-                    <p class="text-sm">Informasi Atlit</p>
-                    <p class="text-sm">User</p>
-                </div>
-
-                <div class="flex flex-col gap-3 md:gap-6">
-                    <h5 class="text-xl font-semibold">Alamat Dan Kontak</h5>
-                    <p class="text-sm">....................</p>
-                    <p class="text-sm">....................</p>
-                    <p class="text-sm">Email :</p>
-                    <p class="text-sm">Telp :</p>
-                </div>
-            </div>
-        </div>
-        <div class="mt-9 w-full flex flex-col gap-4 md:gap-0 md:flex-row justify-between">
-            <div class="w-full md:w-1/3">
-                <div class="text-sm">Copyright © 2023</div>
-                <div class="text-sm">PBJI DAERAH ISTIMEWA YOGYAKARTA</div>
-                <div class="text-sm">All Right Reserved</div>
-            </div>
-            <div class="w-full md:w-1/3">
-                <h5 class="text-xl font-semibold">Ikuti Kami</h5>
-                <div class="mt-6 flex gap-6">
-                    <a href="https://www.facebook.com/">
-                        <img class="w-8 md:w-auto" src="../assets/icon-facebook.png" alt="" />
-                    </a>
-                    <a href="https://www.instagram.com/">
-                        <img class="w-8 md:w-auto" src="../assets/icon-instagram.png" alt="" />
-                    </a>
-                    <a href="https://www.youtube.com/">
-                        <img class="w-8 md:w-auto" src="../assets/icon-youtube.png" alt="" />
-                    </a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-</body>
-
-</html>
+    {{-- end of media partner logo --}}
+@endsection

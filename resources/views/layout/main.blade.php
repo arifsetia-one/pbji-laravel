@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    @vite(['resources/css/app.css', 'resources/js/app.js'])
+</head>
+
+<body>
+    {{-- navbar --}}
+    @include('layout.navbar')
+    {{-- end of navbar --}}
+
+    {{-- content --}}
+    @yield('content')
+    {{-- end of content --}}
+
+    {{-- footer --}}
+    @include('layout.footer')
+    {{-- end of footer --}}
+    <script src="../path/to/flowbite/dist/flowbite.min.js"></script>
+</body>
+
+</html>

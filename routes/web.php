@@ -15,20 +15,20 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     return view('homeNonUser');
-});
+})->name('homeNonUser');
 
 Route::get('/homeUser', function () {
     return view('homeUser');
-});
+})->name('homeUser');
 
 Route::get('/presence', function () {
     return view('presence');
-});
+})->name('presence');
 
 Route::get('/admin', function () {
     return view('admin');
-});
+})->name('admin');
 
 Route::get('/login', function () {
     return view('login');
-});
+})->name('login');
