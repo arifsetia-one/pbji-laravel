@@ -20,7 +20,29 @@
     {{-- footer --}}
     @include('layout.footer')
     {{-- end of footer --}}
-    <script src="../path/to/flowbite/dist/flowbite.min.js"></script>
+
+    {{-- jQuery --}}
+    {{-- <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
+    <script src="/jquery/jquery.js"></script>
+    <script>
+        $.ajaxSetup({
+            header: {
+                'accept': 'application/json'
+            }
+        })
+
+        $(#login).click(async function(e) {
+            e.preventDefault();
+            axios.post('http://127.0.0.1:8000/v1/admin/atlet/presences', {
+                    username: $('#email').val(),
+                    password: $('#password').val()
+                })
+                .then(result => {
+                    console.log('result', result)
+                })
+        })
+    </script>
+    <script src="../path/to/flowbite/dist/flowbite.min.js"></script> --}}
 </body>
 
 </html>
