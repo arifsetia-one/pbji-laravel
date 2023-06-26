@@ -22,7 +22,7 @@
                         <label for="remember" class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">Ingat
                             saya</label>
                     </div>
-                    <a href="#" class="flex justify-center text-sm mt-4 font-medium text-red-600 hover:underline">Login
+                    <a href="#" id="loginAdmin" class="flex justify-center text-sm mt-4 font-medium text-red-600 hover:underline">Login
                         sebagai admin</a>
                     <div class="flex items-baseline justify-between">
                         <button class="w-full px-6 py-2  mt-4 text-white bg-red-600 rounded-lg hover:bg-red-900" id="login">Login</button>
@@ -84,7 +84,7 @@
         //         console.log('err', error) 
         //     }
 
-        await axios.post('http://127.0.0.1:9000/v1/atlet/auth/login', {
+        await axios.post('http://127.0.0.1:6969/v1/admin/auth/login', {
                 username: $('#username').val(),
                 password: $('#password').val()
             })
@@ -92,10 +92,11 @@
                 console.log('result', result)
                 const data = result.data.data
                 const token = data.token
-                const role = data.user.roles[0]
-                console.log(role.name)
-                localStorage.setItem("token", token);
-                window.location.href = "/homeUser"
+                // const role = data.user.roles[0]
+                // console.log(role.name)
+                localStorage.setItem("auth_token", token);
+                // window.location.href = "/homeUser"
+                window.location.href = "/admin"
             })
     })
 </script>
