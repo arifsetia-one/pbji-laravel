@@ -32,3 +32,15 @@ Route::get('/admin', function () {
 Route::get('/login', function () {
     return view('login');
 })->name('login');
+
+Route::get('/loginAdmin', function () {
+    return view('loginAdmin');
+})->name('loginAdmin');
+
+Route::get('/detailBerita', function () {
+    return view('detailBerita');
+})->name('detailBerita');
+
+Route::get('/atletPresence', function () {
+    return view('atletPresence');
+})->name('atletPresence');

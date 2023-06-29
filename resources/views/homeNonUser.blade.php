@@ -101,7 +101,7 @@
                     <p class="mb-4 text-sm md:text-base font-normal text-gray-700">
                         Yogyakarta, 03 September 2022
                     </p>
-                    <a href="#"
+                    <a href="{{ route('detailBerita') }}"
                         class="inline-flex items-center px-3 py-2 w-full justify-center text-sm font-medium text-center bg-red-700 text-white bg-based rounded-md focus:ring-4 focus:outline-none">
                         Lihat Selengkapnya
                     </a>

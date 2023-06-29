@@ -4,7 +4,7 @@
     <section>
         <div class="flex items-center justify-center min-h-screen bg-gray-100 pr-4 pl-4">
             <div class="px-10 py-8 text-left bg-white shadow-lg">
-                <h3 class="text-2xl mt-4 font-bold text-center">Masuk ke Akun</h3>
+                <h3 class="text-2xl mt-4 font-bold text-center">Masuk ke Akun Admin</h3>
                 <form action="">
                     <div class="mt-4 sm:w-96">
                         <div>
@@ -26,7 +26,7 @@
                             <label for="remember" class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">Ingat
                                 saya</label>
                         </div>
-                        <a href="{{ route('loginAdmin') }}" id="loginAdmin"
+                        <a href="#" id="loginAdmin"
                             class="flex justify-center text-sm mt-4 font-medium text-red-600 hover:underline">Login
                             sebagai admin</a>
                         <div class="flex items-baseline justify-between">
@@ -40,27 +40,27 @@
     </section>
 
     <!-- <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
-                                            <script src="/jquery/jquery.js">
-                                                < script type = "text/javascript" >
-                                                    $.ajaxSetup({
-                                                        header: {
-                                                            'accept': 'application/json'
-                                                        }
-                                                    })
+                                <script src="/jquery/jquery.js">
+                                    < script type = "text/javascript" >
+                                        $.ajaxSetup({
+                                            header: {
+                                                'accept': 'application/json'
+                                            }
+                                        })
 
-                                                $(#login).click(function(e) {
-                                                    e.preventDefault();
-                                                    axios.post('http://127.0.0.1:8000/v1/admin/atlet/presences', {
-                                                            username: $('#email').val(),
-                                                            password: $('#password').val()
-                                                        })
-                                                        .then(result => {
-                                                            console.log('result', result)
-                                                        }).catch(err => {
-                                                            console.log('err', err)
-                                                        })
-                                                })
-                                            </script> -->
+                                    $(#login).click(function(e) {
+                                        e.preventDefault();
+                                        axios.post('http://127.0.0.1:8000/v1/admin/atlet/presences', {
+                                                username: $('#email').val(),
+                                                password: $('#password').val()
+                                            })
+                                            .then(result => {
+                                                console.log('result', result)
+                                            }).catch(err => {
+                                                console.log('err', err)
+                                            })
+                                    })
+                                </script> -->
     <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
     <script src="/jquery/jquery.js"></script>
     <script type="text/javascript">

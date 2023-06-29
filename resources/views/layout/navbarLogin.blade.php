@@ -8,13 +8,15 @@
         <a class="text-sm lg:text-base" href="{{ route('homeNonUser') }}">Beranda</a>
         <a class="text-sm lg:text-base" href="{{ route('presence') }}">Profil</a>
         <a class="text-sm lg:text-base" href="{{ route('homeUser') }}">Informasi PBJI</a>
-        <a class="text-sm lg:text-base" href="{{ route('homeUser') }}">Berita</a>
+        <a class="text-sm lg:text-base" href="{{ route('login') }}">Berita</a>
+        <a class="text-sm lg:text-base" href="{{ route('homeUser') }}">Acara</a>
         <a class="text-sm lg:text-base" href="{{ route('login') }}">Bantuan</a>
     </div>
     <div class="flex items-center gap-8">
-        <button
-            class="bg-[#eb1728] py-1 px-4 md:py-2 md:px-6 rounded-[8px] text-sm hover:scale-105 transition-all duration-300"><a
-                class="text-white text-1xl" target="_blank" href="{{ route('login') }}">Masuk</a></button>
+        <div class="hidden lg:flex items-center gap-3">
+            <img class="w-7 h-7 rounded-full bg-cover" src="../assets/icon/avatar.png" alt="" />
+            <div class="font-medium text-sm md:text-base text-based-2">Marco</div>
+        </div>
     </div>
 </section>
 {{-- mobile navbar --}}
@@ -70,9 +72,13 @@
                             class="block py-2 pl-3 pr-4 text-sm text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-based md:p-0">Pemberitahuan</a>
                     </li>
                     <li>
-                        <button
-                            class="bg-[#eb1728] py-1 px-4 md:py-2 md:px-6 rounded-[8px] text-sm hover:scale-105 transition-all duration-300"><a
-                                class="text-white text-1xl" href="{{ route('login') }}">Masuk</a></button>
+                        <a href="#"
+                            class="block py-2 pl-3 pr-4 text-sm text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-based md:p-0">
+                            <div class="flex items-center justify-center gap-3">
+                                <img class="w-7 h-7 rounded-full bg-cover" src="../assets/logo/logo-pbji.png"
+                                    alt="" />
+                            </div>
+                        </a>
                     </li>
                 </ul>
             </div>
