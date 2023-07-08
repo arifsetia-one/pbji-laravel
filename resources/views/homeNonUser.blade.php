@@ -15,7 +15,7 @@
         <div class="container mx-auto mt-40 sm:mt-10 md:mt-80 lg:mt-10 felx items-center grid grid-cols-2">
             <h1
                 class="text-black font-semibold font-sans sm:text-white- md:text-black lg:text-white text-2xl sm:text-6xl  ml-14">
-                Lorem ipsum dolor sit amet consectetur.
+                “Never give up<br> on your dreams”
             </h1>
             <img src="../assets/foto/card-hero.png"
                 class="place-self-center drop-shadow-2xl md:mt-10 lg:mt-10 md:ml-32 scale-75 sm:scale-75 sm:hover:scale-90 lg:scale-110 lg:hover:scale-125 transition-all duration-300">
@@ -53,8 +53,8 @@
                 class="absolute top-0 left-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
                 data-carousel-prev>
                 <span
-                    class="inline-flex items-center justify-center w-6 h-6 md:w-10 md:h-10 rounded-full bg-based/60 group-hover:bg-based/50 group-focus:ring-4 group-focus:ring-slate-300 group-focus:outline-none">
-                    <svg aria-hidden="true" class="w-6 h-6 text-slate-800" fill="none" stroke="currentColor"
+                    class="inline-flex items-center justify-center w-6 h-6 md:w-10 md:h-10 rounded-full bg-based/60 group-hover:bg-based/50 group-focus:ring-4 group-focus:ring-gray-600 group-focus:outline-none">
+                    <svg aria-hidden="true" class="w-6 h-6 text-gray-600" fill="none" stroke="currentColor"
                         viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7">
                         </path>
@@ -66,8 +66,8 @@
                 class="absolute top-0 right-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
                 data-carousel-next>
                 <span
-                    class="inline-flex items-center justify-center w-6 h-6 md:w-10 md:h-10 rounded-full bg-based/60 group-hover:bg-based/50 group-focus:ring-4 group-focus:ring-slate-300 group-focus:outline-none">
-                    <svg aria-hidden="true" class="w-6 h-6 text-slate-800" fill="none" stroke="currentColor"
+                    class="inline-flex items-center justify-center w-6 h-6 md:w-10 md:h-10 rounded-full bg-based/60 group-hover:bg-based/50 group-focus:ring-4 group-focus:ring-gray-600 group-focus:outline-none">
+                    <svg aria-hidden="true" class="w-6 h-6 text-gray-600" fill="none" stroke="currentColor"
                         viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7">
                         </path>

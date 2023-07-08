@@ -26,9 +26,9 @@
                             <label for="remember" class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">Ingat
                                 saya</label>
                         </div>
-                        <a href="#" id="loginAdmin"
+                        <a href="{{ route('login') }}" id="loginAdmin"
                             class="flex justify-center text-sm mt-4 font-medium text-red-600 hover:underline">Login
-                            sebagai admin</a>
+                            sebagai user</a>
                         <div class="flex items-baseline justify-between">
                             <button class="w-full px-6 py-2  mt-4 text-white bg-red-600 rounded-lg hover:bg-red-900"
                                 id="login">Login</button>
@@ -40,27 +40,27 @@
     </section>
 
     <!-- <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
-                                <script src="/jquery/jquery.js">
-                                    < script type = "text/javascript" >
-                                        $.ajaxSetup({
-                                            header: {
-                                                'accept': 'application/json'
-                                            }
-                                        })
+                                    <script src="/jquery/jquery.js">
+                                        < script type = "text/javascript" >
+                                            $.ajaxSetup({
+                                                header: {
+                                                    'accept': 'application/json'
+                                                }
+                                            })
 
-                                    $(#login).click(function(e) {
-                                        e.preventDefault();
-                                        axios.post('http://127.0.0.1:8000/v1/admin/atlet/presences', {
-                                                username: $('#email').val(),
-                                                password: $('#password').val()
-                                            })
-                                            .then(result => {
-                                                console.log('result', result)
-                                            }).catch(err => {
-                                                console.log('err', err)
-                                            })
-                                    })
-                                </script> -->
+                                        $(#login).click(function(e) {
+                                            e.preventDefault();
+                                            axios.post('http://127.0.0.1:8000/v1/admin/atlet/presences', {
+                                                    username: $('#email').val(),
+                                                    password: $('#password').val()
+                                                })
+                                                .then(result => {
+                                                    console.log('result', result)
+                                                }).catch(err => {
+                                                    console.log('err', err)
+                                                })
+                                        })
+                                    </script> -->
     <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
     <script src="/jquery/jquery.js"></script>
     <script type="text/javascript">

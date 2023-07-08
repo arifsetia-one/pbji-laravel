@@ -44,3 +44,7 @@ Route::get('/detailBerita', function () {
 Route::get('/atletPresence', function () {
     return view('atletPresence');
 })->name('atletPresence');
+
+Route::get('/profil', function () {
+    return view('profil');
+})->name('profil');
