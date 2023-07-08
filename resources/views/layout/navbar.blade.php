@@ -6,7 +6,7 @@
     </div>
     <div class="flex justify-between font-medium gap-6 lg:gap-10">
         <a class="text-sm lg:text-base" href="{{ route('homeNonUser') }}">Beranda</a>
-        <a class="text-sm lg:text-base" href="{{ route('profil') }}">Profil</a>
+        <a class="text-sm lg:text-base" href="{{ route('presence') }}">Profil</a>
         <a class="text-sm lg:text-base" href="{{ route('profil') }}">Informasi PBJI</a>
         <a class="text-sm lg:text-base" href="{{ route('homeUser') }}">Berita</a>
         {{-- <a class="text-sm lg:text-base" href="{{ route('login') }}">Bantuan</a> --}}
@@ -45,7 +45,7 @@
                             aria-current="page">Beranda</a>
                     </li>
                     <li>
-                        <a href="{{ route('profil') }}"
+                        <a href="{{ route('presence') }}"
                             class="block py-2 pl-3 pr-4 text-sm text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-based md:p-0">Profil</a>
                     </li>
                     <li>

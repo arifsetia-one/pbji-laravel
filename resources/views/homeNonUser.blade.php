@@ -15,7 +15,7 @@
         <div class="container mx-auto mt-40 sm:mt-10 md:mt-80 lg:mt-10 felx items-center grid grid-cols-2">
             <h1
                 class="text-black font-semibold font-sans sm:text-white- md:text-black lg:text-white text-2xl sm:text-6xl  ml-14">
-                “Never give up<br> on your dreams”
+                Never give up<br> on your dreams
             </h1>
             <img src="../assets/foto/card-hero.png"
                 class="place-self-center drop-shadow-2xl md:mt-10 lg:mt-10 md:ml-32 scale-75 sm:scale-75 sm:hover:scale-90 lg:scale-110 lg:hover:scale-125 transition-all duration-300">
